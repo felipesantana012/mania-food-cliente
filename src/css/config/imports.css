@@ -1,0 +1,27 @@
+
+/* Imports Links CSS */
+@import url('/src/css/config/reset.css');
+@import url('/src/css/config/style.css');
+@import url('/src/css/config/variaveis.css');
+
+@import url('/src/css/header/header.css');
+@import url('/src/css/header/modo-dark.css');
+
+@import url('/src/css/main/section-carrossel.css');
+@import url('/src/css/main/section-categoria.css');
+@import url('/src/css/main/section-prato-promocao.css');
+@import url('/src/css/main/section-todas-comidas-pratos-categorias.css');
+@import url('/src/css/main/section-localizacao.css');
+@import url('/src/css/main/section-carrinho.css');
+
+@import url('/src/css/footer/rodape.css');
+
+
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Icones */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');

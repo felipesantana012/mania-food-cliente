@@ -1,0 +1,10 @@
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape p{
+    font-family: var(--fonte-titulo);
+    color: var(--cor-fonte-primeiro);
+}

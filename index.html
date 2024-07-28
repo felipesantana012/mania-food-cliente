@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mania Food</title>
+    <link rel="icon" type="image/png" href="/src/img/logos-icone/Icone-Mania-Food.png">
+    <link rel="stylesheet" href="/src/css/config/imports.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header id="todo-cabecalho">
+        </header>
+
+        <main>
+            <button id="btnVoltarTopo"><i class="fa-solid fa-arrow-up"></i></button>
+            <button class="carrinho-icone"><img src="/src/img/img-fundo/icone-carrinho.png"
+                    alt="icone carrinho"></button>
+
+            <section class="wrapper">
+                <div class="swiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <img src="/src/img/carrossel/Icone-Mania-Food.png" alt="" />
+                                <h3>Mania Food</h3>
+                            </div>
+                        </div>
+
+                        <!-- <div class="swiper-slide">
+                            <div class="slide-content">
+                                <img src="/src/img/cardapio/Hamburguer/hamburguer-Chicken.png" alt="" />
+                                <h3>bolo</h3>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                    <div class="swiper-button-prev teste1"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </section>
+
+            <section class="carrinho-pedidos">
+                <div class="carrinho">
+                    <h2 class="carrinho__titulo">Pedidos no Carrinho</h2>
+                    <div class="carrinho__fechar">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+
+                    <ul class="carrinho__lista__itens">
+                        <!-- <li class="carrinho__item">
+                        <p class="carrinho__item-quantidade">2 <span>x</span></p>
+                        <h3 class="carrinho__item-titulo">Pizza</h3>                   
+                        <p class="carrinho__item-valor">59,90<span>R$</span></p>
+                        <i class="fa-regular fa-trash-can" id="deletar-item"></i>
+                    </li> -->
+                    </ul>
+                    <h3 class="carrinho__valor-total">Total a Pagar: <span>89,90</span></h3>
+                    <div class="carrinho__btns">
+                        <button class="carrinho__btn-finalizar">Finalizar Pedido</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="categoria">
+                <h2 class="categoria__titulo">Categorias</h2>
+                <ul class="categoria__lista">
+                    <li><a class="categoria__item" href="#promocao-dia">Promoção do Dia</a></li>
+                    <li><a class="categoria__item" href="#Hamburguers">Hamburguer</a></li>
+                    <li><a class="categoria__item" href="#Pizzas">Pizza</a></li>
+                    <li><a class="categoria__item" href="#Salgados">Salgados</a></li>
+                    <li><a class="categoria__item" href="#Doces">Doces</a></li>
+                    <li><a class="categoria__item" href="#Outros">Outros</a></li>
+                </ul>
+            </section>
+
+            <section class="prato__promocao-dia">
+                <div class="prato" id="promocao-dia">
+                    <h2 class="prato__titulo">Promoção do dia</h2>
+                    <div class="prato__descricoes__img">
+                        <div class="prato__descricoes">
+                            <h3 class="prato__descricoes-nome">Pizza de Calabresa</h3>
+                            <ul class="prato__descricoes_informacoes">
+                                <li class="prato__descricoes_informacoes-item">Tamanho G</li>
+                                <li class="prato__descricoes_informacoes-item preco-original">De: 29,90</li>
+                                <li class="prato__descricoes_informacoes-item preco-final">Por: 19,90</li>
+                            </ul>
+                            <p class="prato__descricoes-final">Pizza com bordas recheada, coberta de muito recheio e
+                                muito sabor!</p>
+                            <a class="prato__descricoes-btn" href="#Pizzas">Ver Promoção</a>
+                        </div>
+
+                        <div class="prato__img">
+                            <img src="/src/img/cardapio/Pizzas/pizaa-calabresa.png" alt="Imagem da promoção do dia"
+                                class="prato__img-imagem">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="todas__comidas__pratos__categorias" id="cardapio">
+
+            </section>
+
+            <section class="localizacao__contato" id="contato">
+                <div class="localizacao__contato__titulo-logo">
+                    <h2 class="localizacao__contato-titulo">Nossa Localização</h2>
+                    <img class="localizacao__contato-img" src="/src/img/logos-icone/icone-localizacao.png" alt="">
+                </div>
+
+                <div class="localizacao">
+
+                    <div class="localizacao__google">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1974.9013141618364!2d-35.02141511351155!3d-8.121567970442426!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1714843149428!5m2!1spt-BR!2sbr"></iframe>
+                    </div>
+
+                    <div class="contato">
+                        <div class="contato__img">
+                            <img src="/src/img/img-fundo/frente-restaurante.png" alt="foto da frente do restaurante"
+                                class="contato__img-imagem">
+                        </div>
+
+                        <div class="contato__descricao">
+                            <div class="contato__descricao-endereco">
+                                <h2>Nosso Endereço</h2>
+
+                                <p><span>Rua: </span data-quantidade-produto>0 travessa boa esperança</p>
+                                <p><span>Bairro: </span>Vila Rica></p>
+                                <p><span>Cidade: </span> Jaboatão dos Guararapes</p>
+                            </div>
+
+                            <div class="contato__descricao-entrar-contato">
+                                <h2>Entre em contato conosco</h2>
+                                <ul class="contato__descricao-links">
+                                    <a href="https://wa.me/5581988742454?text=Ola%20Felipe!" target="_blank">
+                                        <img src="/src/img/logos-icone/logo-whatsaap.png" class="contato__imagem-img"
+                                            alt="logo Whatsapp">
+                                    </a>
+
+                                    <a href="#" target="_blank">
+                                        <img src="/src/img/logos-icone/logo-instagram.png" class="contato__imagem-img"
+                                            alt="logo Instagram">
+                                    </a>
+
+                                    <a href="tel:+5581988742454">
+                                        <img src="/src/img/logos-icone/logo-telefone.png" class="contato__imagem-img"
+                                            alt="logo Telefone">
+                                    </a>
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="rodape">
+            <p>&copy; 2024 - Desenvolvido por Felipe Santana</p>
+        </footer>
+
+    </div>
+
+
+
+
+    <script src="/src/js/header.js"></script>
+    <script src="/src/js/redenrizarDados.js"></script>
+    <script src="/src/js/scriptSlide.js"></script>
+    <script src="/src/js/scriptComidas.js"></script>
+    <script src="/src/js/valorProdutos.js"></script>
+    <script src="src/js/scroll.js"></script>
+</body>
+
+</html>
