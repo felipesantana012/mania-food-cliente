@@ -23,7 +23,7 @@ $(document).ready(function () {
   }
 
   //percorrer o array com as tags e depois chamar a função
-  const seletoresTop = [".prato", ".todas__comidas__pratos__categorias"];
+  const seletoresTop = [".prato"];
   for (const key in seletoresTop) {
     revelarElemento(seletoresTop[key], "left");
   }

@@ -1,5 +1,6 @@
 const renderizarComidas = async () => {
-  let cardapio = await buscarCardapio();
+  const cardapio = await buscarCardapio();
+  const usuario = await buscarEnderecoRedesSociais();
 
   let todosItens = [];
   cardapio.forEach((i) => {
@@ -128,9 +129,9 @@ const renderizarComidas = async () => {
 
     if (somaValorTotal > 0) {
       let stringValorTotal = `Total a pagar: ${somaValorTotal.toFixed(2)}`;
-      const urlWhatsApp = `https://wa.me/5581988742454?text=${encodeURIComponent(
-        menssagem + stringValorTotal
-      )}`;
+      const urlWhatsApp = `https://wa.me/55${
+        usuario.redeSociais.whatsapp
+      }?text=${encodeURIComponent(menssagem + stringValorTotal)}`;
       window.open(urlWhatsApp);
     }
   });

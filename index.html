@@ -196,41 +196,45 @@
 
                     <div class="localizacao__google">
 
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1974.9013141618364!2d-35.02141511351155!3d-8.121567970442426!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1714843149428!5m2!1spt-BR!2sbr"></iframe>
+                        <iframe id="localizacao-maps"></iframe>
                     </div>
 
                     <div class="contato">
                         <div class="contato__img">
-                            <img src="/src/img/img-fundo/frente-restaurante.png" alt="foto da frente do restaurante"
-                                class="contato__img-imagem">
+                            <img alt="foto da frente do restaurante" class="contato__img-imagem"
+                                id="img_foto-restaurante">
                         </div>
 
                         <div class="contato__descricao">
                             <div class="contato__descricao-endereco">
                                 <h2>Nosso Endereço</h2>
 
-                                <p><span>Rua: </span data-quantidade-produto>0 travessa boa esperança</p>
-                                <p><span>Bairro: </span>Vila Rica></p>
-                                <p><span>Cidade: </span> Jaboatão dos Guararapes</p>
+                                <p id="endereco-rua"> </p>
+                                <p id="endereco-bairro"></p>
+                                <p id="endereco-cidade"></p>
                             </div>
 
                             <div class="contato__descricao-entrar-contato">
                                 <h2>Entre em contato conosco</h2>
                                 <ul class="contato__descricao-links">
-                                    <a href="https://wa.me/5581988742454?text=Ola%20Felipe!" target="_blank">
-                                        <img src="/src/img/logos-icone/logo-whatsaap.png" class="contato__imagem-img"
+                                    <a id="contato-whatsapp" target="_blank">
+                                        <img src="/src/img/logos-icone/icone-whatsapp01.png" class="contato__imagem-img"
                                             alt="logo Whatsapp">
                                     </a>
 
-                                    <a href="#" target="_blank">
-                                        <img src="/src/img/logos-icone/logo-instagram.png" class="contato__imagem-img"
-                                            alt="logo Instagram">
+                                    <a id="contato-instagram" target="_blank">
+                                        <img src="/src/img/logos-icone/icone-instagram01.png"
+                                            class="contato__imagem-img" alt="logo Instagram">
                                     </a>
 
-                                    <a href="tel:+5581988742454">
-                                        <img src="/src/img/logos-icone/logo-telefone.png" class="contato__imagem-img"
-                                            alt="logo Telefone">
+                                    <a id="contato-facebook" target="_blank">
+                                        <img src="/src/img/logos-icone/icone-facebook01.png" class="contato__imagem-img"
+                                            alt="logo facebook">
+                                    </a>
+
+                                    <a id="contato-tiktok" target="_blank">
+                                        <img src="/src/img/logos-icone/icone-tiktok01.png" class="contato__imagem-img"
+                                            alt="logo facebook">
                                     </a>
                                 </ul>
                             </div>
@@ -258,6 +262,7 @@
 
     <script src="/src/js/header.js"></script>
     <script src="/src/js/redenrizarDados.js"></script>
+    <script src="/src/js/enderecoEContato.js"></script>
     <script src="/src//js/promocaoDia.js"></script>
     <script src="/src/js/scriptSlide.js"></script>
     <script src="/src/js/scriptComidas.js"></script>
