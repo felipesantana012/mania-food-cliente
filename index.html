@@ -19,6 +19,76 @@
 <body>
     <div class="container">
         <header id="todo-cabecalho">
+            <div class="cabecalho">
+
+
+                <div class="cabecalho__logo">
+                    <a href="/"><img src="/src/img/logos-icone/Logo-Mania-Food.png" alt="Logo do site, um hambuguer"
+                            class="cabecalho__logo-img"></a>
+                </div>
+
+                <div class="cabecalho__menu">
+                    <ul class="cabecalho__menu__lista">
+                        <li class="cabecalho__menu__lista-link">
+                            <a href="/" class="cabecalho__menu__lista-link-ancora">Home</a>
+                        </li>
+
+                        <li class="cabecalho__menu__lista-link">
+                            <a href="#cardapio" class="cabecalho__menu__lista-link-ancora">Cardapio</a>
+                        </li>
+
+                        <li class="cabecalho__menu__lista-link">
+                            <a href="#contato" class="cabecalho__menu__lista-link-ancora">Contato</a>
+                        </li>
+
+
+
+                        <li class="cabecalho__menu__lista-link">
+                            <div class="cabecalho__menu__dark">
+                                <input type="checkbox" class="checkbox" id="ativar-modo-dark" />
+                                <label class="label" for="ativar-modo-dark">
+                                    <i class="fas fa-sun"></i>
+                                    <i class="fas fa-moon"></i>
+                                    <div class="ball"></div>
+                                </label>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="menu-burguer">
+                    <i class="fa-solid fa-bars icone"></i>
+                </div>
+
+                <div class="menu-burguer-links ">
+                    <li class="cabecalho__menu__lista-link">
+                        <a href="/" class="cabecalho__menu__lista-link-ancora">Home</a>
+                    </li>
+
+                    <li class="cabecalho__menu__lista-link">
+                        <a href="#cardapio" class="cabecalho__menu__lista-link-ancora">Cardapio</a>
+                    </li>
+
+                    <li class="cabecalho__menu__lista-link">
+                        <a href="#contato" class="cabecalho__menu__lista-link-ancora">Contato</a>
+                    </li>
+
+
+
+                    <li class="cabecalho__menu__lista-link">
+                        <div class="cabecalho__menu__dark">
+                            <input type="checkbox" class="checkbox" id="ativar-modo-dark-mobile" />
+                            <label class="label" for="ativar-modo-dark-mobile">
+                                <i class="fas fa-sun"></i>
+                                <i class="fas fa-moon"></i>
+                                <div class="ball"></div>
+                            </label>
+                        </div>
+                    </li>
+                </div>
+
+            </div>
         </header>
 
         <main>
@@ -68,7 +138,7 @@
                         <i class="fa-regular fa-trash-can" id="deletar-item"></i>
                     </li> -->
                     </ul>
-                    <h3 class="carrinho__valor-total">Total a Pagar: <span>89,90</span></h3>
+                    <h3 class="carrinho__valor-total">Total a Pagar: <span></span></h3>
                     <div class="carrinho__btns">
                         <button class="carrinho__btn-finalizar">Finalizar Pedido</button>
                     </div>
@@ -91,7 +161,7 @@
             <section class="prato__promocao-dia">
                 <div class="prato" id="promocao-dia">
                     <h2 class="prato__titulo">Promoção do dia</h2>
-                    <div class="prato__descricoes__img">
+                    <!-- <div class="prato__descricoes__img">
                         <div class="prato__descricoes">
                             <h3 class="prato__descricoes-nome">Pizza de Calabresa</h3>
                             <ul class="prato__descricoes_informacoes">
@@ -108,7 +178,7 @@
                             <img src="/src/img/cardapio/Pizzas/pizaa-calabresa.png" alt="Imagem da promoção do dia"
                                 class="prato__img-imagem">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -188,6 +258,7 @@
 
     <script src="/src/js/header.js"></script>
     <script src="/src/js/redenrizarDados.js"></script>
+    <script src="/src//js/promocaoDia.js"></script>
     <script src="/src/js/scriptSlide.js"></script>
     <script src="/src/js/scriptComidas.js"></script>
     <script src="/src/js/valorProdutos.js"></script>
