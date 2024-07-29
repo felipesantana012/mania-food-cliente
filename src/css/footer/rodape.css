@@ -1,10 +1,18 @@
-.rodape{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.rodape p{
-    font-family: var(--fonte-titulo);
-    color: var(--cor-fonte-primeiro);
+.rodape a {
+  text-decoration: none;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-fonte-primeiro);
+  padding-bottom: 0.1rem;
+  box-shadow: var(--cor-box-shadow);
+  transition: ease-in-out 0.2s;
+}
+
+.rodape a:hover {
+  color: var(--cor-hover-border-primeiro);
 }

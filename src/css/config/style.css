@@ -1,61 +1,55 @@
-
-
-body{
-    transition: 0.5s linear;
-    background-color: var(--cor-background-primeiro);
-    
-
-} 
-
-.container{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 12vh auto 8vh;
-    grid-template-areas: "h h" "m m" "f f"; 
-   
+html {
+  scroll-behavior: smooth;
 }
 
-
-header{
-    background-color: var(--cor-transparente);
-    color: var(--cor-fonte-primeiro);
-    grid-area: h;
-    z-index: 3;
+body {
+  transition: 0.5s linear;
+  background-color: var(--cor-background-primeiro);
 }
 
-
-main{
-    background-color: var(--cor-transparente);
-    color: var(--cor-fonte-segundo);
-    grid-area: m;
-    overflow: hidden;
-    
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 12vh auto 8vh;
+  grid-template-areas: "h h" "m m" "f f";
 }
 
-
-footer{
-    background-color: brown;
-    grid-area: f;
+header {
+  background-color: var(--cor-transparente);
+  color: var(--cor-fonte-primeiro);
+  grid-area: h;
+  z-index: 3;
 }
 
+main {
+  background-color: var(--cor-transparente);
+  color: var(--cor-fonte-segundo);
+  grid-area: m;
+  overflow: hidden;
+}
+
+footer {
+  background-color: brown;
+  grid-area: f;
+}
 
 #btnVoltarTopo {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    display: none;
-    z-index: 1;
-    color: var(--cor-fonte-primeiro);
-    border: 2px solid var(--cor-fonte-terceiro);
-    background-color: var(--cor-fonte-terceiro);
-    width: 40px;
-    height: 30px;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: all 0.5s;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: none;
+  z-index: 1;
+  color: var(--cor-fonte-primeiro);
+  border: 2px solid var(--cor-fonte-terceiro);
+  background-color: var(--cor-fonte-terceiro);
+  width: 40px;
+  height: 30px;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
-#btnVoltarTopo:hover{
-    transform: scale(1.06);
-    opacity: 0.8;
+#btnVoltarTopo:hover {
+  transform: scale(1.06);
+  opacity: 0.8;
 }

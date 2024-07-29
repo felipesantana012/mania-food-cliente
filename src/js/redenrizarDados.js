@@ -1,4 +1,4 @@
-const URL_CARDAPIO = "http://localhost:3000/cardapio";
+const URL_CARDAPIO = `${url}cardapio`;
 const buscarCardapio = async () => {
   try {
     const res = await fetch(URL_CARDAPIO);
@@ -13,6 +13,7 @@ const buscarCardapio = async () => {
 document.addEventListener("DOMContentLoaded", async () => {
   await renderizarComidas();
   await redenrizarSlides();
+  await categorias();
   await redenrizarPromocaoDia();
   botoesAumentarDiminuir();
 });

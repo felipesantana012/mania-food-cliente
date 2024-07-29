@@ -1,4 +1,4 @@
-const URL_USUARIO = "http://localhost:3000/usuario";
+const URL_USUARIO = `${url}usuario`;
 
 const buscarEnderecoRedesSociais = async () => {
   try {
@@ -13,9 +13,6 @@ const buscarEnderecoRedesSociais = async () => {
 
 const redenrizarEnderecoRedeSociais = async () => {
   const data = await buscarEnderecoRedesSociais();
-
-  console.log(data.endereco);
-
   //ENDERECO
   document.getElementById("img_foto-restaurante").src = data.endereco.fotoLocal;
   document.getElementById(
