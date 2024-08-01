@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
   box-shadow: 1px 1px 5px black;
   z-index: 1;
 }
@@ -65,6 +65,7 @@
   font-size: 24px;
   cursor: pointer;
   transition: all 0.3s;
+  font-size: 2rem;
 }
 
 .menu-mobile__icone:hover {

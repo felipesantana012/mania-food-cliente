@@ -4,7 +4,8 @@ const buscarEnderecoRedesSociais = async () => {
   try {
     const res = await fetch(URL_USUARIO);
     const data = await res.json();
-    return data;
+    const dataItem = data[0];
+    return dataItem;
   } catch (e) {
     console.error(e);
     return [];

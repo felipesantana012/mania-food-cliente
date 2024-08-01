@@ -67,6 +67,7 @@
 }
 
 .prato__descricoes-final {
+  padding-top: 0.5rem;
   color: var(--cor-fonte-terceiro);
   font-family: var(--fonte-titulo);
   font-weight: 500;
