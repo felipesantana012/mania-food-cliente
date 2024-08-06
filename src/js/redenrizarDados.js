@@ -1,4 +1,4 @@
-const URL_CARDAPIO = `${url}cardapio`;
+const URL_CARDAPIO = `${url}/cardapio`;
 const buscarCardapio = async () => {
   try {
     const res = await fetch(URL_CARDAPIO);

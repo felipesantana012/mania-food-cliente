@@ -13,7 +13,7 @@ const redenrizarSlides = async () => {
     conatinerImgs.innerHTML += `
     <div class="swiper-slide">
     <div class="slide-content">
-        <img src=${i.img} alt="${i.nome}" />
+        <img src=${url}${i.img} alt="${i.nome}" />
         <h3>${i.nome}</h3>
     </div>
 </div>

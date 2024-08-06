@@ -24,6 +24,7 @@
 }
 
 .comida__cards {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 1.2rem;
@@ -33,21 +34,22 @@
   border: 1px solid var(--cor-fonte-terceiro);
   background-color: var(--cor-background-terceiro);
   border-radius: 1rem;
-  flex: 1 1 1;
-  flex-basis: calc(49%);
+  width: 20rem;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
+  gap: 8%;
   box-shadow: var(--cor-box-shadow);
   align-items: center;
+  padding: 0.5rem;
 }
 
 .comida__descricoes {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  max-width: 40%;
+  width: 18rem;
   justify-content: space-evenly;
   gap: 1rem;
 }
@@ -169,7 +171,10 @@
   }
 }
 
-@media screen and (max-width: 636px) {
+@media screen and (max-width: 675px) {
+  .comidas {
+    align-items: center;
+  }
   .comida__card__descricoes__img {
     flex-basis: calc(100%); /* Um item por linha */
     flex-direction: column-reverse;

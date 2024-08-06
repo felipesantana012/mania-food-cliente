@@ -1,4 +1,4 @@
-const URL_USUARIO = `${url}usuario`;
+const URL_USUARIO = `${url}/usuario`;
 
 const buscarEnderecoRedesSociais = async () => {
   try {

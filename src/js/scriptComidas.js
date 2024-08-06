@@ -58,7 +58,7 @@ const renderizarComidas = async () => {
                 </div>
     
                 <div class="comida__img">
-                    <img src="${item.img}" alt="${item.nome}"
+                    <img src="${url}${item.img}" alt="${item.img}"
                         class="comida__img-imagem">
                 </div>
             </div>
