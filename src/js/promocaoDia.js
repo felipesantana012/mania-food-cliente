@@ -35,7 +35,7 @@ const redenrizarPromocaoDia = async () => {
                             }</p>             
                         </div>
                         <div class="prato__img">
-                            <img src=${item.img} alt=${item.nome}
+                            <img src=${url}${item.img} alt=${item.nome}
                                 class="prato__img-imagem">
                         </div>
   `;
