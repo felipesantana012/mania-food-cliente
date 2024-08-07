@@ -12,14 +12,15 @@ const promocaoDia = async () => {
 
 const redenrizarPromocaoDia = async () => {
   const item = await promocaoDia();
-  const promocaoDiaContainer = document.getElementById("promocao-dia");
-  const h2 = document.createElement("h2");
-  h2.textContent = "Promoção do dia";
-  h2.className = "prato__titulo";
-  const promocaoDiaItem = document.createElement("div");
-  promocaoDiaItem.className = "prato__descricoes__img";
+  if (item) {
+    const promocaoDiaContainer = document.getElementById("promocao-dia");
+    const h2 = document.createElement("h2");
+    h2.textContent = "Promoção do dia";
+    h2.className = "prato__titulo";
+    const promocaoDiaItem = document.createElement("div");
+    promocaoDiaItem.className = "prato__descricoes__img";
 
-  promocaoDiaItem.innerHTML = `
+    promocaoDiaItem.innerHTML = `
                         <div class="prato__descricoes">
                             <h3 class="prato__descricoes-nome">${item.nome}</h3>
                             <ul class="prato__descricoes_informacoes">
@@ -39,6 +40,7 @@ const redenrizarPromocaoDia = async () => {
                                 class="prato__img-imagem">
                         </div>
   `;
-  promocaoDiaContainer.appendChild(h2);
-  promocaoDiaContainer.appendChild(promocaoDiaItem);
+    promocaoDiaContainer.appendChild(h2);
+    promocaoDiaContainer.appendChild(promocaoDiaItem);
+  }
 };
